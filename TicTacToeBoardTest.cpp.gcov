@@ -1,0 +1,502 @@
+        -:    0:Source:TicTacToeBoardTest.cpp
+        -:    0:Programs:2
+        -:    1:/**
+        -:    2: * Unit Tests for TicTacToeBoard
+        -:    3:**/
+        -:    4:
+        -:    5:#include <gtest/gtest.h>
+        -:    6:#include "TicTacToeBoard.h"
+        -:    7: 
+        -:    8:class TicTacToeBoardTest : public ::testing::Test
+        -:    9:{
+        -:   10:	protected:
+        -:   11:		TicTacToeBoardTest(){} //constructor runs before each test
+        -:   12:		virtual ~TicTacToeBoardTest(){} //destructor cleans up after tests
+        -:   13:		virtual void SetUp(){} //sets up before each test (after constructor)
+        -:   14:		virtual void TearDown(){} //clean up after each test, (before destructor) 
+        -:   15:};
+        -:   16:
+        -:   17:/* EXAMPLE TEST FORMAT
+        -:   18:TEST(TicTacToeBoardTest, unitTestName)
+        -:   19:{
+        -:   20:	ASSERT_TRUE(true);
+        -:   21:}
+        -:   22:*/
+        -:   23:
+        -:   24:// toggleTurn
+function _ZN39TicTacToeBoardTest_toggleTurn_getX_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN39TicTacToeBoardTest_toggleTurn_getX_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN39TicTacToeBoardTest_toggleTurn_getX_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN39TicTacToeBoardTest_toggleTurn_getX_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+        5:   25:TEST(TicTacToeBoardTest, toggleTurn_getX)
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 0 (fallthrough)
+branch 27 taken 1
+call   28 never executed
+        -:   26:{
+        1:   27:	TicTacToeBoard obj;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   28:	obj.setLastTurn(O);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   29:	ASSERT_TRUE(obj.getTurn() == X);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+branch 24 taken 1
+branch 25 taken 0
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+        -:   30:}
+        -:   31:
+function _ZN39TicTacToeBoardTest_toggleTurn_getO_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN39TicTacToeBoardTest_toggleTurn_getO_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN39TicTacToeBoardTest_toggleTurn_getO_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN39TicTacToeBoardTest_toggleTurn_getO_Test8TestBodyEv called 1 returned 100% blocks executed 63%
+        5:   32:TEST(TicTacToeBoardTest, toggleTurn_getO)
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 0 (fallthrough)
+branch 27 taken 1
+call   28 never executed
+        -:   33:{
+        1:   34:	TicTacToeBoard obj;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   35:	obj.setLastTurn(O);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   36:	ASSERT_TRUE(obj.getTurn() == O);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+branch 24 taken 0
+branch 25 taken 1
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+        -:   37:}
+        -:   38:
+function _ZN40TicTacToeBoardTest_toggleTurn_error_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN40TicTacToeBoardTest_toggleTurn_error_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN40TicTacToeBoardTest_toggleTurn_error_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN40TicTacToeBoardTest_toggleTurn_error_Test8TestBodyEv called 1 returned 100% blocks executed 63%
+        5:   39:TEST(TicTacToeBoardTest, toggleTurn_error)
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 0 (fallthrough)
+branch 27 taken 1
+call   28 never executed
+        -:   40:{
+        1:   41:	TicTacToeBoard obj;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   42:	obj.setLastTurn(Blank);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   43:	ASSERT_TRUE(obj.getTurn() == Invalid);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 1 (fallthrough)
+branch  6 taken 0
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+call   14 returned 1
+branch 15 taken 1 (fallthrough)
+branch 16 taken 0 (throw)
+call   17 returned 1
+branch 18 taken 1 (fallthrough)
+branch 19 taken 0 (throw)
+call   20 returned 1
+call   21 returned 1
+call   22 returned 1
+call   23 returned 1
+branch 24 taken 0
+branch 25 taken 1
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+        -:   44:}
+        -:   45:
+        -:   46:// placePiece
+function _ZN43TicTacToeBoardTest_placePiece_gameOver_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN43TicTacToeBoardTest_placePiece_gameOver_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN43TicTacToeBoardTest_placePiece_gameOver_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN43TicTacToeBoardTest_placePiece_gameOver_Test8TestBodyEv called 1 returned 100% blocks executed 41%
+        5:   47:TEST(TicTacToeBoardTest, placePiece_gameOver)
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 0 (fallthrough)
+branch 27 taken 1
+call   28 never executed
+        -:   48:{
+        1:   49:	TicTacToeBoard obj;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   50:	obj.setStatus(true); //set to game over
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   51:	ASSERT_TRUE(obj.placePiece(0,0) == Invalid);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+branch 24 taken 1
+branch 25 taken 0
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+        -:   52:}
+        -:   53:
+function _ZN44TicTacToeBoardTest_placePiece_spotTaken_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN44TicTacToeBoardTest_placePiece_spotTaken_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN44TicTacToeBoardTest_placePiece_spotTaken_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN44TicTacToeBoardTest_placePiece_spotTaken_Test8TestBodyEv called 1 returned 100% blocks executed 42%
+        5:   54:TEST(TicTacToeBoardTest, placePiece_spotTaken)
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+call   24 returned 1
+call   25 returned 1
+branch 26 taken 0 (fallthrough)
+branch 27 taken 1
+call   28 never executed
+        -:   55:{
+        1:   56:	TicTacToeBoard obj;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   57:	Piece p = obj.placePiece(0,0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   58:	Piece spot = obj.getPiece(0,0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   59:	p = obj.placePiece(0,0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   60:	ASSERT_TRUE(spot == p);
+call    0 returned 1
+call    1 returned 1
+branch  2 taken 0 (fallthrough)
+branch  3 taken 1
+call    4 never executed
+branch  5 never executed
+branch  6 never executed
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+call   11 never executed
+branch 12 never executed
+branch 13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+call   17 never executed
+call   18 never executed
+call   19 never executed
+call   20 returned 1
+branch 21 taken 1
+branch 22 taken 0
+call   23 never executed
+call   24 never executed
+call   25 never executed
+call   26 never executed
+        -:   61:}
+        -:   62:
+        -:   63:// getPiece
+function _ZN37TicTacToeBoardTest_getPiece_setX_TestC2Ev called 1 returned 100% blocks executed 100%
+function _ZN37TicTacToeBoardTest_getPiece_setX_TestD0Ev called 1 returned 100% blocks executed 100%
+function _ZN37TicTacToeBoardTest_getPiece_setX_TestD2Ev called 1 returned 100% blocks executed 75%
+function _ZN37TicTacToeBoardTest_getPiece_setX_Test8TestBodyEv called 1 returned 100% blocks executed 42%
+        5:   64:TEST(TicTacToeBoardTest, getPiece_setX)
+call    0 returned 1
+call    1 returned 1
+call    2 returned 1
+call    3 returned 1
+call    4 returned 1
+call    5 returned 1
+call    6 returned 1
+call    7 returned 1
+branch  8 taken 1 (fallthrough)
+branch  9 taken 0 (throw)
+call   10 returned 1
+branch 11 taken 1 (fallthrough)
+branch 12 taken 0 (throw)
+call   13 returned 1
+branch 14 taken 1 (fallthrough)
+branch 15 taken 0 (throw)
+call   16 returned 1
+call   17 returned 1
+call   18 returned 1
+call   19 never executed
+call   20 never executed
+call   21 never executed
+call   22 returned 1
+call   23 returned 1
+call   24 returned 1
+branch 25 taken 0 (fallthrough)
+branch 26 taken 1
+call   27 never executed
+        -:   65:{
+        1:   66:	TicTacToeBoard obj;
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   67:	Piece p = obj.placePiece(0,0);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   68:	Piece placedPiece = obj.getLastTurn();
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+        1:   69:	ASSERT_TRUE(obj.getPiece(0,0) == placedPiece);
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0 (throw)
+call    3 returned 1
+call    4 returned 1
+branch  5 taken 0 (fallthrough)
+branch  6 taken 1
+call    7 never executed
+branch  8 never executed
+branch  9 never executed
+call   10 never executed
+branch 11 never executed
+branch 12 never executed
+call   13 never executed
+call   14 never executed
+branch 15 never executed
+branch 16 never executed
+call   17 never executed
+branch 18 never executed
+branch 19 never executed
+call   20 never executed
+call   21 never executed
+call   22 never executed
+call   23 returned 1
+branch 24 taken 1
+branch 25 taken 0
+call   26 never executed
+call   27 never executed
+call   28 never executed
+call   29 never executed
+function _GLOBAL__sub_I__ZN39TicTacToeBoardTest_toggleTurn_getX_Test10test_info_E called 1 returned 100% blocks executed 100%
+function _Z41__static_initialization_and_destruction_0ii called 1 returned 100% blocks executed 69%
+        3:   70:}
+call    0 returned 1
+branch  1 taken 1 (fallthrough)
+branch  2 taken 0
+branch  3 taken 1 (fallthrough)
+branch  4 taken 0
+        -:   71:
+        -:   72://TEST(TicTacToeBoardTest, )
+        -:   73://{
+        -:   74://}

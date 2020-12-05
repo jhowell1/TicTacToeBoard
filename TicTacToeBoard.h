@@ -1,3 +1,7 @@
+#include <iostream>
+using std::cout;
+using std::endl;
+
 #ifndef _TICTACTOEBOARD_H_
 #define _TICTACTOEBOARD_H_
 
@@ -18,12 +22,26 @@ enum Piece
 class TicTacToeBoard
 {
     private:
+				bool gameOver;
         Piece board[BOARDSIZE][BOARDSIZE];
         Piece turn;
-
+				Piece lastTurn;
+				
     public:
         //Constructor sets an empty board and specifies it is X's turn first
         TicTacToeBoard();
+				
+				bool getStatus();
+				void setStatus(bool newStatus);
+
+				Piece** getBoard();
+				void setBoard(Piece** &arr);
+
+				Piece getTurn();
+				void setTurn(Piece newTurn);
+
+				Piece getLastTurn();
+				void setLastTurn(Piece newLast);
 
         /**
          * Switches turn member variable to represent whether it's X's or O's turn
@@ -41,6 +59,7 @@ class TicTacToeBoard
          * should neither change the board nor change whose turn it is.
          **/  
         Piece placePiece(int row, int column);
+
 
         /**
          * Returns what piece is at the provided coordinates, or Blank if there
